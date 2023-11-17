@@ -1,9 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
 export default function Document() {
   const meta = {
-    title: 'Next.js Blog Starter Kit',
-    description: 'Clone and deploy your own Next.js portfolio in minutes.',
+    title: 'Jérémie Letonnelier',
+    description: 'Personal website',
     image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
   }
 
@@ -23,7 +24,9 @@ export default function Document() {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <body>
-        <Main />
+
+            <Main />
+
         <NextScript />
       </body>
     </Html>

@@ -6,6 +6,10 @@ const withNextra = require('nextra')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  pageExtensions: ["tsx", "ts"],
+  swcMinify: true,
+  transpilePackages: ["nextjs-components"],
   // any configs you need
 }
 
