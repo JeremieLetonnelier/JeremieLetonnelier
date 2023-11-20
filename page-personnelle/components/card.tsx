@@ -2,40 +2,35 @@
 
 import * as React from 'react';
 import Image from 'next/image';
+import { Github, ExternalLink } from 'nextjs-components/src/icons';
 
 
-export const Card = () => {
+export const Card = ({ ProjectTitle, ProjectDescription }) => {
     return(
     <>
+      
         <div className='card'> 
             <div  className='card-link'>
-
-                <div className='card-div1'>
-
-                    <div className='card-div-images'>
-                        <img className='card-image' src='/images/logo-cerema.png'></img>
-                        <div className='card-div-subimage'>
-                            <img className='card-subimage' src='/images/github.png'></img>
-                        </div>
-                    </div> 
-
-                </div>
                 <div className='card-text-block'>
-                        <h3><a href="https://github.com/JeremieLetonnelier/estimaction" target='_blank'>Estim'action</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor euismod justo, 
-                            id commodo lectus auctor a. Curabitur tortor nunc, mattis in sem id, bibendum dictum massa. 
-                            Praesent diam metus, accumsan ut viverra eget, aliquam vel neque. Sed ultricies luctus velit, 
-                            sed ultrices quam molestie vel. ;</p>
+                  <div className='card-text-title'> 
+                    <div className='card-text-title'>
+                      <h4><Github size={15}></Github></h4>
                     </div>
-                <div className='card-text-block'>
-                    <img
-                        src="/images/external-link.png"
-                        alt=""
-                        height="20px"
-                        width="20px" />
+                    <div className='card-text-title'>
+                      <h4>{ProjectTitle}</h4>
+                    </div>
+                    <div className='card-text-title'>
+                      <a href="https://github.com/JeremieLetonnelier/estimaction" target='_blank'><ExternalLink size={10}></ExternalLink></a>
+                    </div>
+                  
+                  </div>
+                  <div className='card-text-block'>
+                      <p>{ProjectDescription} </p>
+                  </div>
                 </div>
             </div>
         </div>
+      
      </>
     )
 };
