@@ -128,3 +128,12 @@ img.next-image {
   font-size: small;
   color: gray;
 }
+
+.container {
+  column-count : 4;
+}
+
+.container-column{
+  display: flex;
+  flex-direction: column;
+}

@@ -10,11 +10,9 @@ import { Badge } from "nextjs-components/src/components/Badge";
 import { Pill } from "nextjs-components/src/components/Pill";
 
 import { Shield, ExternalLink } from "nextjs-components/src/icons/";
+import { Capability } from 'components/Capability.tsx';
 
 # Jérémie
-
-
-
 
 
 
@@ -25,8 +23,8 @@ import { Shield, ExternalLink } from "nextjs-components/src/icons/";
   <div className='presentation'>
     <Image
       src='/images/jeremie.JPG'
-      width={300}
-      height={300}
+      width={200}
+      height={200}
       alt='Pic of Jérémie'
       style={{  borderRadius: '40%'}}
     />
@@ -65,8 +63,16 @@ Jérémie
 </div>
 
 --- 
-## Capabilites
+## Capabilites dashboard
 
+
+<div className="container">
+  <div class="container-column"> <Capability level={100}> </Capability>
+  </div>
+  <div class="container-column">Python</div>
+  <div class="container-column">Python</div>
+  <div class="container-column">Python</div>
+</div>
 * Python
   * dbt
   * FastAPI
