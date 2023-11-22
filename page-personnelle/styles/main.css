@@ -119,9 +119,9 @@ img.next-image {
 }
 
 .card a {
-    color: #0074de;
-    text-decoration:none;
-    hover: underline;
+  color: #0074de;
+  text-decoration:none;
+  hover: underline;
 }
 
 .card p {
@@ -129,11 +129,31 @@ img.next-image {
   color: gray;
 }
 
-.container {
-  column-count : 4;
+
+.container-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
 }
 
-.container-column{
-  display: flex;
-  flex-direction: column;
+.container-8 {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-rows: 64px 20px 20px 20px 20px 20px 20px;
+  align-items: center;
+  grid-column-gap: 4px;
+}
+
+.container-8 p {
+  font-size: smaller;
+}
+
+.container-sub {
+  column-count : 2;
+  padding-bottom: 8px;
+}
+
+.capacity{
+  align-items: center;
+  padding-right: 10px;
 }

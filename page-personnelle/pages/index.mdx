@@ -7,10 +7,10 @@ date: 2023-11-16
 import Image from 'next/image';
 import { Stack } from "nextjs-components/src/components/Stack";
 import { Badge } from "nextjs-components/src/components/Badge";
+import { Pill } from "nextjs-components/src/components/Pill";
+import LinearProgress from '@mui/material/LinearProgress';
 
-
-import { Shield, ExternalLink } from "nextjs-components/src/icons/";
-import { Capability } from 'components/Capability.tsx';
+import { ExternalLink, Mail } from "nextjs-components/src/icons/";
 
 # Jérémie
 
@@ -32,17 +32,17 @@ import { Capability } from 'components/Capability.tsx';
   <div className='presentation'>
     ## Hey there!
 
-    I'm Jérémie Letonnelier, 
     <div>
       <Pill prefix={<ExternalLink />} label="LinkedIn" href="https://www.linkedin.com/in/jeremie-letonnelier/" target="_blank"/>
       <Pill prefix={<ExternalLink />} label="Github" href="https://github.com/JeremieLetonnelier" target="_blank"/>
+      <Pill prefix={<Mail />} label="jeremie.letonnelier@gmail.com" href="" target=""/>
     </div>
   </div>
 
 </Stack>
   
 
-I'm a curious and meticulous Data Engineer with a passion for unraveling the complexities of data. 
+I'm Jérémie Letonnelier, a curious and meticulous Data Engineer with a passion for unraveling the complexities of data. 
 I thrive on the thrill of learning new things and tackling challenges head-on. Not to brag, but admitting when I don't know something is my superpower – it keeps me on my toes and ensures I'm always growing.
 
 When it comes to data, I'm your go-to person. I can seamlessly develop ETL processes, wrangle both attribute and geometric data like a pro, and architect robust databases that stand the test of time. 
@@ -63,33 +63,84 @@ Jérémie
 </div>
 
 --- 
-## Capabilites dashboard
+## Skills dashboard
 
 
-<div className="container">
-  <div class="container-column"> <Capability level={100}> </Capability>
-  </div>
-  <div class="container-column">Python</div>
-  <div class="container-column">Python</div>
-  <div class="container-column">Python</div>
+<div className="container-8"> 
+
+  <div><h4>Back/DE</h4></div>
+  <div></div>
+
+  <div><h4>Data</h4></div>
+  <div></div>
+
+  <div><h4>Cloud</h4></div>
+  <div></div>
+ 
+  <div><h4>Front</h4></div>
+  <div></div>
+
+  
+  <div className='capacity'><LinearProgress value={95} variant='determinate' thickness={10}  color='success'></LinearProgress></div>
+  <div><p>Python</p></div>
+  <div className='capacity'><LinearProgress value={95} variant='determinate' size='lg' color='warning'></LinearProgress></div>
+  <div><p>BigQuery</p></div>
+  <div className='capacity'><LinearProgress value={85} variant='determinate' size='lg' color='secondary'></LinearProgress></div>
+  <div><p>GCP</p></div>
+  <div className='capacity'><LinearProgress value={80} variant='determinate' size='lg' color='inherit'></LinearProgress></div>
+  <div><p>Streamlit</p></div>
+
+
+  <div className='capacity'><LinearProgress value={85} variant='determinate' size='lg' color='success'></LinearProgress></div>
+  <div><p>dbt</p></div>
+  <div className='capacity'><LinearProgress value={80} variant='determinate' size='lg' color='warning'></LinearProgress></div>
+  <div><p>PostgreSQL</p></div>
+  <div className='capacity'><LinearProgress value={50} variant='determinate' size='lg' color='secondary'></LinearProgress></div>
+  <div><p>AWS</p></div>
+  <div className='capacity'><LinearProgress value={70} variant='determinate' size='lg' color='inherit'></LinearProgress></div>
+  <div><p>Dash</p></div>
+
+
+  <div className='capacity'><LinearProgress value={75} variant='determinate' size='lg' color='success'></LinearProgress></div>
+  <div><p>FastAPI</p></div>
+  <div className='capacity'><LinearProgress value={80} variant='determinate' size='lg' color='warning'></LinearProgress></div>
+  <div><p>Postgis</p></div>
+  <div className='capacity'><LinearProgress value={30} variant='determinate' size='lg' color='secondary'></LinearProgress></div>
+  <div><p>Azure</p></div>
+  <div className='capacity'><LinearProgress value={50} variant='determinate' size='lg' color='inherit'></LinearProgress></div>
+  <div><p>React</p></div>
+
+
+  <div className='capacity'><LinearProgress value={40} variant='determinate' size='lg' color='success'></LinearProgress></div>
+  <div><p>AirFlow</p></div>
+  <div className='capacity'><LinearProgress value={40} variant='determinate' size='lg' color='warning'></LinearProgress></div>
+  <div><p>Redshift</p></div>
+  <div className='capacity'></div>
+  <div></div>
+  <div className='capacity'><LinearProgress value={50} variant='determinate' size='lg' color='inherit'></LinearProgress></div>
+  <div><p>Next.js</p></div>
+
+  <div className='capacity'><LinearProgress value={60} variant='determinate' size='lg' color='success'></LinearProgress></div>
+  <div><p>Docker</p></div>
+  <div className='capacity'></div>
+  <div><p></p></div>
+  <div className='capacity'></div>
+  <div><p></p></div>
+  <div className='capacity'></div>
+  <div><p></p></div>
+
+  <div className='capacity'><LinearProgress value={60} variant='determinate' size='lg' color='success'></LinearProgress></div>
+  <div><p>Flask</p></div>
+  <div className='capacity'></div>
+  <div><p></p></div>
+  <div className='capacity'></div>
+  <div><p></p></div>
+  <div className='capacity'></div>
+  <div><p></p></div>
+
 </div>
-* Python
-  * dbt
-  * FastAPI
-  * Flask 
-* GCP 
-* AWS
-* Azure
+
 ---
 
 
 
-<div>
-  Twitter [@yourname](https://twitter.com/yourname)
-  <br />
-  GitHub [@yourname](https://github.com/yourname)
-  <br />
-  Instagram [@yourname](https://instagram.com/yourname)
-  <br />
-  Email your@name.com
-</div>
